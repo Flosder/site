@@ -44,6 +44,7 @@
             justify-content: space-between;
         }
         .gallery-item {
+            position: relative;
             width: 48%;
             margin-bottom: 20px;
             text-align: center;
@@ -52,6 +53,25 @@
             max-width: 100%;
             height: auto;
             border-radius: 8px;
+        }
+        .watermark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            pointer-events: none;
+        }
+        .watermark span {
+            opacity: 0.3;
+            font-size: 10px;
+            color: white;
+            transform: rotate(-45deg);
+            user-select: none;
         }
         .gallery-item p {
             margin: 10px 0 0;
@@ -65,6 +85,12 @@
             margin-top: 20px;
         }
     </style>
+    <script>
+        // Desabilitar o clique com o botão direito do mouse
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -80,23 +106,63 @@
         <h2>Fotos de Casamento</h2>
         <div class="gallery">
             <div class="gallery-item">
-                <img src="letra.jpeg" alt="Casamento 1">
+                <img src="images/casamento1.jpg" alt="Casamento 1">
+                <div class="watermark">
+                    <span>OneShot</span>
+                    <span>OneShot</span>
+                    <span>OneShot</span>
+                    <span>OneShot</span>
+                    <span>OneShot</span>
+                    <span>OneShot</span>
+                </div>
                 <p>Casamento 1</p>
             </div>
             <div class="gallery-item">
                 <img src="images/casamento2.jpg" alt="Casamento 2">
+                <div class="watermark">
+                    <span>OneShot</span>
+                    <span>OneShot</span>
+                    <span>OneShot</span>
+                    <span>OneShot</span>
+                    <span>OneShot</span>
+                    <span>OneShot</span>
+                </div>
                 <p>Casamento 2</p>
             </div>
             <div class="gallery-item">
                 <img src="images/casamento3.jpg" alt="Casamento 3">
+                <div class="watermark">
+                    <span>OneShot</span>
+                    <span>OneShot</span>
+                    <span>OneShot</span>
+                    <span>OneShot</span>
+                    <span>OneShot</span>
+                    <span>OneShot</span>
+                </div>
                 <p>Casamento 3</p>
             </div>
             <div class="gallery-item">
                 <img src="images/casamento4.jpg" alt="Casamento 4">
+                <div class="watermark">
+                    <span>OneShot</span>
+                    <span>OneShot</span>
+                    <span>OneShot</span>
+                    <span>OneShot</span>
+                    <span>OneShot</span>
+                    <span>OneShot</span>
+                </div>
                 <p>Casamento 4</p>
             </div>
             <div class="gallery-item">
                 <img src="images/casamento5.jpg" alt="Casamento 5">
+                <div class="watermark">
+                    <span>OneShot</span>
+                    <span>OneShot</span>
+                    <span>OneShot</span>
+                    <span>OneShot</span>
+                    <span>OneShot</span>
+                    <span>OneShot</span>
+                </div>
                 <p>Casamento 5</p>
             </div>
         </div>

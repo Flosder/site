@@ -67,8 +67,8 @@
             pointer-events: none;
         }
         .watermark span {
-            opacity: 0.4;
-            font-size: 20px;
+            opacity: 0.3;
+            font-size: 10px;
             color: white;
             transform: rotate(-45deg);
             user-select: none;
@@ -85,19 +85,10 @@
             margin-top: 20px;
         }
     </style>
-     <script>
+    <script>
         // Desabilitar o clique com o botão direito do mouse
         document.addEventListener('contextmenu', function(e) {
             e.preventDefault();
-        });
-
-        // Desabilitar arrastar e soltar em todas as imagens
-        document.addEventListener('DOMContentLoaded', function() {
-            document.querySelectorAll('img').forEach(img => {
-                img.addEventListener('dragstart', (e) => {
-                    e.preventDefault();
-                });
-            });
         });
     </script>
 </head>

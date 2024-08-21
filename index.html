@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal - Rafael</title>
+    <title>Galeria - Rafael</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -31,22 +31,29 @@
             font-weight: bold;
         }
         .container {
-            max-width: 1200px;
+            max-width: 800px;
             margin: 20px auto;
             padding: 20px;
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
-        .gallery {
+        .gallery-buttons {
             display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
         }
-        .gallery img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
+        .gallery-buttons a {
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .gallery-buttons a:hover {
+            background-color: #0056b3;
         }
         footer {
             background-color: #333;
@@ -58,7 +65,7 @@
 </head>
 <body>
     <header>
-        <h1>Página Principal - Rafael</h1>
+        <h1>Galeria - Rafael</h1>
     </header>
     <nav>
         <a href="index.html">Início</a>
@@ -67,12 +74,11 @@
         <a href="contato.html">Contato</a>
     </nav>
     <div class="container">
-        <h2>Bem-vindo à Página Principal</h2>
-        <p>Veja algumas das nossas fotos aleatórias e descubra mais sobre nossos serviços.</p>
-        <div class="gallery">
-            <img src="foto1.jpg" alt="Foto Aleatória 1">
-            <img src="foto2.jpg" alt="Foto Aleatória 2">
-            <!-- Adicione mais fotos aleatórias aqui -->
+        <h2>Escolha uma Categoria</h2>
+        <div class="gallery-buttons">
+            <a href="casamento.html">Casamento</a>
+            <a href="esporte.html">Esporte</a>
+            <a href="variadas.html">Variadas</a>
         </div>
     </div>
     <footer>

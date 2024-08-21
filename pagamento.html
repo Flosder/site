@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra da Foto - Rafael</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .details {
+            display: flex;
+            gap: 15px;
+        }
+        .details img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .buy-button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            font-size: 18px;
+            text-align: center;
+        }
+        .buy-button:hover {
+            background-color: #218838;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Compra da Foto - Rafael</h1>
+    </header>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="pagamento.html">Pagamento</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+    <div class="container">
+        <h2>Compra da Foto</h2>
+        <div class="details">
+            <div class="photo-container">
+                <img src="sua-foto1.jpg" alt="Foto para Compra">
+            </div>
+            <div class="details">
+                <h2>Foto 1</h2>
+                <p>Descrição detalhada da foto. Inclua informações sobre o que a foto representa, suas características especiais, e qualquer outro detalhe relevante.</p>
+                <p>Preço: R$ 15,00</p>
+                <a href="https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=SEU_ID_DE_PAGAMENTO" class="buy-button">Comprar e Baixar Sem Marca D'água</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Rafael Fotografia</p>
+        <p>Email: <a href="mailto:rafael@email.com">rafael@email.com</a></p>
+    </footer>
+</body>
+</html>

@@ -5,7 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casamento - Rafael</title>
     <style>
-        /* Seu CSS aqui, similar ao das outras páginas */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .gallery-item {
+            width: 48%;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .gallery-item p {
+            margin: 10px 0 0;
+            font-size: 16px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -20,7 +78,28 @@
     </nav>
     <div class="container">
         <h2>Fotos de Casamento</h2>
-        <!-- Coloque aqui as fotos de casamento -->
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/casamento1.jpg" alt="Casamento 1">
+                <p>Casamento 1</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/casamento2.jpg" alt="Casamento 2">
+                <p>Casamento 2</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/casamento3.jpg" alt="Casamento 3">
+                <p>Casamento 3</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/casamento4.jpg" alt="Casamento 4">
+                <p>Casamento 4</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/casamento5.jpg" alt="Casamento 5">
+                <p>Casamento 5</p>
+            </div>
+        </div>
     </div>
     <footer>
         <p>&copy; 2024 Rafael Fotografia</p>
